@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"      
+ xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+<persistence-unit name="gmb12" transaction-type="RESOURCE_LOCAL">
+	<jar-file>../lib/salespoint5.1-r885.jar</jar-file>
+	<class>gmb.model.member.Member</class>
+	<class>gmb.model.member.Employee</class>
+	<class>gmb.model.member.Admin</class>
+	<class>gmb.model.member.Customer</class>
+	<class>gmb.model.member.Notary</class>
+	<properties>
+		<property name="javax.persistence.jdbc.url" value="jdbc:derby:C:\Users\Mirko Salm\MyDB;create=true"/>
+		<property name="javax.persistence.jdbc.user" value=""/>
+		<property name="javax.persistence.jdbc.password" value=""/>
+		<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+		<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+	</properties>
+</persistence-unit>
+</persistence>
